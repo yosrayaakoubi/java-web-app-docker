@@ -35,6 +35,13 @@ node{
        }
        
     }
-     
+  stage('Deploy to Localhost') {
+    steps {
+        echo "=== Déploiement local ==="
+        sh './deploy.sh'
+    }
+}
+
+}  
      
 }
